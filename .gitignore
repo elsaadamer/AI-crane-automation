@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+crane_memory.json
+.vscode/
+.idea/
+.DS_Store

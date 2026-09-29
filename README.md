@@ -2,6 +2,11 @@
 
 ### Physical AI: an autonomous tower crane driven by a Large Language Model and computer vision.
 
+    > [!IMPORTANT]
+    > **This is Version 1 (old): DC motors, Arduino Uno and an electromagnet.**
+    > It was replaced because it was not accurate enough: DC motors give no position feedback, so the crane could only estimate its position from the motor run time.
+    > The crane was rebuilt with stepper motors, an ESP32 and a hook. **The current version is here: [AI-Crane-Automation-v2](https://github.com/elsaadamer/AI-Crane-Automation-v2)**
+    
 A single overhead camera reconstructs the workspace in real-world centimeters. A YOLOv8 model and ArUco fiducials locate every object and station. A Large Language Model plans the task in natural language and calls a control stack that drives a physical 3-DOF crane, while a safety layer in code blocks any motion that would cross a worker. The model can reason and command, but it cannot override the safety check.
 
 ![Physical AI](https://img.shields.io/badge/Physical_AI-vision_%2B_LLM_%2B_hardware-6f42c1)
